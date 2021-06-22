@@ -1,0 +1,29 @@
+{
+  "schemaName": "cases",
+  "dimensionFieldSpecs": [
+    {
+      "name": "areaCode",
+      "dataType": "STRING"
+    },
+    {
+      "name": "areaName",
+      "dataType": "STRING"
+    },
+    {
+      "name": "age",
+      "dataType": "STRING"
+    }
+  ],
+  "metricFieldSpecs": [
+    {
+      "name": "cases",
+      "dataType": "INT"
+    }             
+  ],
+  "dateTimeFieldSpecs": [{
+    "name": "date",
+    "dataType": "STRING",
+    "format" : "1:DAYS:SIMPLE_DATE_FORMAT:yyyy-MM-dd",
+    "granularity": "1:DAYS"
+  }]
+}

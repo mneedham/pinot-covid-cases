@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  pinot:
+    image: apachepinot/pinot:0.7.1
+    command: "QuickStart -type batch"
+    container_name: "pinot-covid-cases"
+    volumes:
+      - ./config:/config
+    ports:
+      - "9000:9000"      
+      - "8000:8000"
+  jupyter:
+    container_name: "jupyter-covid-cases"
+    image: jupyter/scipy-notebook:${JUPYTER_VERSION:-latest}
+    volumes:
+      - ./notebooks:/home/jovyan
+    ports:
+      - "8888:8888"
+    
