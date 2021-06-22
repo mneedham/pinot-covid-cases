@@ -1,3 +1,6 @@
 = Analysing England's Covid case data with Apache Pinot
 
-This is the code for the blog post Apache Pinot: Analysing England's Covid case data[https://www.markhneedham.com/blog/2021/06/22/pinot-analysing-england-covid-cases/^]
+This is the code for the blog post https://www.markhneedham.com/blog/2021/06/22/pinot-analysing-england-covid-cases/[Apache Pinot: Analysing England's Covid case data^]
+
+You'll need to download https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&metric=newCasesBySpecimenDateAgeDemographics&format=csv[the latest CSV file^] from the Coronavirus Dashboard and put it under `config/covid/cases`
+
